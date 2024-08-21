@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Successful</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      /* Custom styles to match your theme */
+      .payment-success {
+        text-align: center;
+        padding: 50px 20px;
+        background-color: #f8f9fa; /* Match with your template's background */
+        border-radius: 10px;
+        margin: 50px auto;
+        max-width: 500px;
+      }
+
+      .payment-success h1 {
+        color: #28a745; /* Success green */
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      .payment-success p {
+        font-size: 1.2rem;
+        color: #6c757d; /* Text color matching the template */
+        margin-bottom: 30px;
+      }
+
+      .btn-home {
+        background-color: #007bff; /* Match with your template's primary color */
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 1.1rem;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+
+      .btn-home:hover {
+        background-color: #0056b3; /* Darker shade of the primary color */
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="payment-success">
+        <h1>Payment Successful!</h1>
+        <p>
+          Thank you. Your payment has been processed successfully. Further
+          details will be sent to the mail provided.
+        </p>
+        <a href="{% url 'home' %}" class="btn-home">Go to Home</a>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

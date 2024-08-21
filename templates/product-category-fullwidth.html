@@ -1,0 +1,148 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce Homepage</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <a href="#" class="text-2xl font-bold text-gray-800">MyShop</a>
+        <ul class="flex space-x-6">
+          <li>
+            <a href="#" class="text-gray-600 hover:text-gray-800">Home</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-600 hover:text-gray-800">Products</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-600 hover:text-gray-800">About</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-600 hover:text-gray-800">Contact</a>
+          </li>
+        </ul>
+        <div>
+          <a href="#" class="text-gray-600 hover:text-gray-800">Cart</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="bg-cover bg-center h-96"
+      style="
+        background-image: url('data:image/jpeg;base64,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');
+      "
+    >
+      <div class="container mx-auto h-full flex items-center justify-center">
+        <div class="text-center">
+          <h1 class="text-5xl font-bold text-white">Welcome to MyShop</h1>
+          <p class="text-lg text-white mt-4">
+            Find the best products here at unbeatable prices.
+          </p>
+          <a
+            href="#"
+            class="mt-6 inline-block bg-yellow-500 text-white px-6 py-3 rounded-full shadow-md hover:bg-yellow-600"
+            >Shop Now</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="container mx-auto px-4 py-12">
+      <h2 class="text-3xl font-bold text-gray-800 text-center">
+        Featured Products
+      </h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-8"
+      >
+        <!-- Product Card 1 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img
+            src="{% static 'images/product4.jpg' %}"
+            alt="Product Image"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-800">Product Name</h3>
+            <p class="text-gray-600 mt-2">$49.99</p>
+            <a
+              href="#"
+              class="block mt-4 bg-blue-500 text-white text-center py-2 rounded-lg hover:bg-blue-600"
+              >View Product</a
+            >
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img
+            src="{% static 'images/product3.jpg' %}"
+            alt="Product Image"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-800">Product Name</h3>
+            <p class="text-gray-600 mt-2">$49.99</p>
+            <a
+              href="#"
+              class="block mt-4 bg-blue-500 text-white text-center py-2 rounded-lg hover:bg-blue-600"
+              >View Product</a
+            >
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img
+            src="{% static 'images/product2.jpg' %}"
+            alt="Product Image"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-800">Product Name</h3>
+            <p class="text-gray-600 mt-2">$49.99</p>
+            <a
+              href="#"
+              class="block mt-4 bg-blue-500 text-white text-center py-2 rounded-lg hover:bg-blue-600"
+              >View Product</a
+            >
+          </div>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img
+            src="{% static 'images/product1.jpg' %}"
+            alt="Product Image"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-800">Product Name</h3>
+            <p class="text-gray-600 mt-2">$59.99</p>
+            <a
+              href="#"
+              class="block mt-4 bg-blue-500 text-white text-center py-2 rounded-lg hover:bg-blue-600"
+              >View Product</a
+            >
+          </div>
+        </div>
+        <!-- Additional Product Cards can go here -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2024 MyShop. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

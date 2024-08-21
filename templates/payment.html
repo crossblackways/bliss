@@ -1,0 +1,112 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Payment Details</title>
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">Enter Your Payment Details</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-4">
+                  <!-- Image of the product -->
+                  <img
+                    src="{{ product.image.url }}"
+                    alt="{{ product.name }}"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-8">
+                  <!-- Product Name and Price -->
+                  <h5 class="card-title">{{ product.name }}</h5>
+                  <p class="card-text">
+                    <strong>Price:</strong> {{ product.price }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h5 style="color: red">{{ error_message }}</h5>
+          <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="cardName">Name on Card</label>
+              <input
+                type="text"
+                class="form-control"
+                name="card_name"
+                id="cardName"
+                placeholder="Enter name as it appears on the card"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="cardNumber">Card Number</label>
+              <input
+                type="text"
+                class="form-control"
+                name="card_number"
+                id="cardNumber"
+                placeholder="1234 5678 9012 3456"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="expiryDate">Expiry Date</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="expiry_date"
+                  id="expiryDate"
+                  placeholder="MM/YY"
+                  required
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="cvv">CVV</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="cvv"
+                  id="cvv"
+                  placeholder="123"
+                  required
+                />
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Submit Payment
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+  </body>
+</html>

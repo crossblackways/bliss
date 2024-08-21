@@ -1,0 +1,1987 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <!-- molla/product-category-boxed.html  22 Nov 2019 10:03:02 GMT -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Molla - Bootstrap eCommerce Template</title>
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Molla - Bootstrap eCommerce Template" />
+    <meta name="author" content="p-themes" />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{% static 'assets/images/icons/apple-touch-icon.png' %}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{% static 'assets/images/icons/favicon-32x32.png' %}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{% static 'assets/images/icons/favicon-16x16.png' %}"
+    />
+    <link rel="manifest" href="{% static 'assets/images/icons/site.html' %}" />
+    <link
+      rel="mask-icon"
+      href="{% static 'assets/images/icons/safari-pinned-tab.svg' %}"
+      color="#666666"
+    />
+    <link
+      rel="shortcut icon"
+      href="{% static 'assets/images/icons/favicon.ico' %}"
+    />
+    <meta name="apple-mobile-web-app-title" content="Molla" />
+    <meta name="application-name" content="Molla" />
+    <meta name="msapplication-TileColor" content="#cc9966" />
+    <meta
+      name="msapplication-config"
+      content="assets/images/icons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Plugins CSS File -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <header class="header">
+        <div class="header-top">
+          <div class="container">
+            <div class="header-left">
+              <div class="header-dropdown">
+                <a href="#">Usd</a>
+                <div class="header-menu">
+                  <ul>
+                    <li><a href="#">Eur</a></li>
+                    <li><a href="#">Usd</a></li>
+                  </ul>
+                </div>
+                <!-- End .header-menu -->
+              </div>
+              <!-- End .header-dropdown -->
+
+              <div class="header-dropdown">
+                <a href="#">Eng</a>
+                <div class="header-menu">
+                  <ul>
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">French</a></li>
+                    <li><a href="#">Spanish</a></li>
+                  </ul>
+                </div>
+                <!-- End .header-menu -->
+              </div>
+              <!-- End .header-dropdown -->
+            </div>
+            <!-- End .header-left -->
+
+            <div class="header-right">
+              <ul class="top-menu">
+                <li>
+                  <a href="#">Links</a>
+                  <ul>
+                    <li>
+                      <a href="tel:#"
+                        ><i class="icon-phone"></i>Call: +0123 456 789</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="icon-heart-o"></i>Wishlist
+                        <span>(3)</span></a
+                      >
+                    </li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li>
+                      <a href="#signin-modal" data-toggle="modal"
+                        ><i class="icon-user"></i>Login</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- End .top-menu -->
+            </div>
+            <!-- End .header-right -->
+          </div>
+          <!-- End .container -->
+        </div>
+        <!-- End .header-top -->
+
+        <div class="header-middle sticky-header">
+          <div class="container">
+            <div class="header-left">
+              <button class="mobile-menu-toggler">
+                <span class="sr-only">Toggle mobile menu</span>
+                <i class="icon-bars"></i>
+              </button>
+
+              <a href="{% url 'home' %}" class="logo">
+                <img
+                  src="{% static 'assets/images/bliss.png' %}"
+                  alt="Molla Logo"
+                  width="105"
+                  height="25"
+                />
+              </a>
+
+              <nav class="main-nav">
+                <ul class="menu sf-arrows">
+                  <li class="megamenu-container active">
+                    <a href="{% url 'home' %}" class="sf-with-ul">Home</a>
+
+                    <div class="megamenu demo">
+                      <div class="menu-col">
+                        <div class="menu-title">Choose your demo</div>
+                        <!-- End .menu-title -->
+
+                        <div class="demo-list">
+                          <div class="demo-item">
+                            <a href="{% url 'home' %}">
+                              <span
+                                class="demo-bg"
+                                style="
+                                  background-image: url(assets/images/menu/demos/1.jpg);
+                                "
+                              ></span>
+                              <span class="demo-title"
+                                >01 - furniture store</span
+                              >
+                            </a>
+                          </div>
+                          <!-- End .demo-item -->
+
+                          <div class="demo-item">
+                            <a href="{% url 'home' %}">
+                              <span
+                                class="demo-bg"
+                                style="
+                                  background-image: url(assets/images/menu/demos/2.jpg);
+                                "
+                              ></span>
+                              <span class="demo-title"
+                                >02 - furniture store</span
+                              >
+                            </a>
+                          </div>
+                          <!-- End .demo-item -->
+
+                          <div class="demo-item">
+                            <a href="{% url 'home' %}">
+                              <span
+                                class="demo-bg"
+                                style="
+                                  background-image: url(assets/images/menu/demos/3.jpg);
+                                "
+                              ></span>
+                              <span class="demo-title"
+                                >03 - electronic store</span
+                              >
+                            </a>
+                          </div>
+                          <!-- End .demo-item -->
+
+                          <div class="demo-item">
+                            <a href="{% url 'home' %}">
+                              <span
+                                class="demo-bg"
+                                style="
+                                  background-image: url(assets/images/menu/demos/4.jpg);
+                                "
+                              ></span>
+                              <span class="demo-title"
+                                >04 - electronic store</span
+                              >
+                            </a>
+                          </div>
+                          <!-- End .demo-item -->
+
+                          <div class="demo-item">
+                            <a href="{% url 'home' %}">
+                              <span
+                                class="demo-bg"
+                                style="
+                                  background-image: url(assets/images/menu/demos/5.jpg);
+                                "
+                              ></span>
+                              <span class="demo-title">05 - fashion store</span>
+                            </a>
+                          </div>
+                          <!-- End .demo-item -->
+
+                          <div class="demo-item">
+                            <a href="{% url 'home' %}">
+                              <span
+                                class="demo-bg"
+                                style="
+                                  background-image: url(assets/images/menu/demos/6.jpg);
+                                "
+                              ></span>
+                              <span class="demo-title">06 - fashion store</span>
+                            </a>
+                          </div>
+                          <!-- End .demo-item -->
+
+                          <div class="demo-item">
+                            <a href="{% url 'home' %}">
+                              <span
+                                class="demo-bg"
+                                style="
+                                  background-image: url(assets/images/menu/demos/7.jpg);
+                                "
+                              ></span>
+                              <span class="demo-title">07 - fashion store</span>
+                            </a>
+                          </div>
+                          <!-- End .demo-item -->
+
+                          <div class="demo-item">
+                            <a href="{% url 'home' %}">
+                              <span
+                                class="demo-bg"
+                                style="
+                                  background-image: url(assets/images/menu/demos/8.jpg);
+                                "
+                              ></span>
+                              <span class="demo-title">08 - fashion store</span>
+                            </a>
+                          </div>
+                          <!-- End .demo-item -->
+
+                          <div class="demo-item">
+                            <a href="{% url 'home' %}">
+                              <span
+                                class="demo-bg"
+                                style="
+                                  background-image: url(assets/images/menu/demos/9.jpg);
+                                "
+                              ></span>
+                              <span class="demo-title">09 - fashion store</span>
+                            </a>
+                          </div>
+                          <!-- End .demo-item -->
+
+                          <div class="demo-item">
+                            <a href="{% url 'home' %}">
+                              <span
+                                class="demo-bg"
+                                style="
+                                  background-image: url(assets/images/menu/demos/10.jpg);
+                                "
+                              ></span>
+                              <span class="demo-title">10 - shoes store</span>
+                            </a>
+                          </div>
+                          <!-- End .demo-item -->
+
+                          <div class="demo-item hidden">
+                            <a href="{% url 'home' %}">
+                              <span
+                                class="demo-bg"
+                                style="
+                                  background-image: url(assets/images/menu/demos/11.jpg);
+                                "
+                              ></span>
+                              <span class="demo-title"
+                                >11 - furniture simple store</span
+                              >
+                            </a>
+                          </div>
+                          <!-- End .demo-item -->
+
+                          <div class="demo-item hidden">
+                            <a href="{% url 'home' %}">
+                              <span
+                                class="demo-bg"
+                                style="
+                                  background-image: url(assets/images/menu/demos/12.jpg);
+                                "
+                              ></span>
+                              <span class="demo-title"
+                                >12 - fashion simple store</span
+                              >
+                            </a>
+                          </div>
+                          <!-- End .demo-item -->
+
+                          <div class="demo-item hidden">
+                            <a href="{% url 'home' %}">
+                              <span
+                                class="demo-bg"
+                                style="
+                                  background-image: url(assets/images/menu/demos/13.jpg);
+                                "
+                              ></span>
+                              <span class="demo-title">13 - market</span>
+                            </a>
+                          </div>
+                          <!-- End .demo-item -->
+
+                          <div class="demo-item hidden">
+                            <a href="{% url 'home' %}">
+                              <span
+                                class="demo-bg"
+                                style="
+                                  background-image: url(assets/images/menu/demos/14.jpg);
+                                "
+                              ></span>
+                              <span class="demo-title"
+                                >14 - market fullwidth</span
+                              >
+                            </a>
+                          </div>
+                          <!-- End .demo-item -->
+
+                          <div class="demo-item hidden">
+                            <a href="{% url 'home' %}">
+                              <span
+                                class="demo-bg"
+                                style="
+                                  background-image: url(assets/images/menu/demos/15.jpg);
+                                "
+                              ></span>
+                              <span class="demo-title">15 - lookbook 1</span>
+                            </a>
+                          </div>
+                          <!-- End .demo-item -->
+
+                          <div class="demo-item hidden">
+                            <a href="{% url 'home' %}">
+                              <span
+                                class="demo-bg"
+                                style="
+                                  background-image: url(assets/images/menu/demos/16.jpg);
+                                "
+                              ></span>
+                              <span class="demo-title">16 - lookbook 2</span>
+                            </a>
+                          </div>
+                          <!-- End .demo-item -->
+
+                          <div class="demo-item hidden">
+                            <a href="{% url 'home' %}">
+                              <span
+                                class="demo-bg"
+                                style="
+                                  background-image: url(assets/images/menu/demos/17.jpg);
+                                "
+                              ></span>
+                              <span class="demo-title">17 - fashion store</span>
+                            </a>
+                          </div>
+                          <!-- End .demo-item -->
+
+                          <div class="demo-item hidden">
+                            <a href="{% url 'home' %}">
+                              <span
+                                class="demo-bg"
+                                style="
+                                  background-image: url(assets/images/menu/demos/18.jpg);
+                                "
+                              ></span>
+                              <span class="demo-title"
+                                >18 - fashion store (with sidebar)</span
+                              >
+                            </a>
+                          </div>
+                          <!-- End .demo-item -->
+
+                          <div class="demo-item hidden">
+                            <a href="{% url 'home' %}">
+                              <span
+                                class="demo-bg"
+                                style="
+                                  background-image: url(assets/images/menu/demos/19.jpg);
+                                "
+                              ></span>
+                              <span class="demo-title">19 - games store</span>
+                            </a>
+                          </div>
+                          <!-- End .demo-item -->
+
+                          <div class="demo-item hidden">
+                            <a href="{% url 'home' %}">
+                              <span
+                                class="demo-bg"
+                                style="
+                                  background-image: url(assets/images/menu/demos/20.jpg);
+                                "
+                              ></span>
+                              <span class="demo-title">20 - book store</span>
+                            </a>
+                          </div>
+                          <!-- End .demo-item -->
+
+                          <div class="demo-item hidden">
+                            <a href="{% url 'home' %}">
+                              <span
+                                class="demo-bg"
+                                style="
+                                  background-image: url(assets/images/menu/demos/21.jpg);
+                                "
+                              ></span>
+                              <span class="demo-title">21 - sport store</span>
+                            </a>
+                          </div>
+                          <!-- End .demo-item -->
+
+                          <div class="demo-item hidden">
+                            <a href="{% url 'home' %}">
+                              <span
+                                class="demo-bg"
+                                style="
+                                  background-image: url(assets/images/menu/demos/22.jpg);
+                                "
+                              ></span>
+                              <span class="demo-title">22 - tools store</span>
+                            </a>
+                          </div>
+                          <!-- End .demo-item -->
+
+                          <div class="demo-item hidden">
+                            <a href="{% url 'home' %}">
+                              <span
+                                class="demo-bg"
+                                style="
+                                  background-image: url(assets/images/menu/demos/23.jpg);
+                                "
+                              ></span>
+                              <span class="demo-title"
+                                >23 - fashion left navigation store</span
+                              >
+                            </a>
+                          </div>
+                          <!-- End .demo-item -->
+
+                          <div class="demo-item hidden">
+                            <a href="{% url 'home' %}">
+                              <span
+                                class="demo-bg"
+                                style="
+                                  background-image: url(assets/images/menu/demos/24.jpg);
+                                "
+                              ></span>
+                              <span class="demo-title"
+                                >24 - extreme sport store</span
+                              >
+                            </a>
+                          </div>
+                          <!-- End .demo-item -->
+                        </div>
+                        <!-- End .demo-list -->
+
+                        <div class="megamenu-action text-center">
+                          <a
+                            href="#"
+                            class="btn btn-outline-primary-2 view-all-demos"
+                            ><span>View All Demos</span
+                            ><i class="icon-long-arrow-right"></i
+                          ></a>
+                        </div>
+                        <!-- End .text-center -->
+                      </div>
+                      <!-- End .menu-col -->
+                    </div>
+                    <!-- End .megamenu -->
+                  </li>
+                  <li>
+                    <a href="{% url 'home' %}" class="sf-with-ul">Shop</a>
+
+                    <div class="megamenu megamenu-md">
+                      <div class="row no-gutters">
+                        <div class="col-md-8">
+                          <div class="menu-col">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="menu-title">Shop with sidebar</div>
+                                <!-- End .menu-title -->
+                                <ul>
+                                  <li>
+                                    <a href="{% url 'home' %}">Shop List</a>
+                                  </li>
+                                  <li>
+                                    <a href="{% url 'home' %}"
+                                      >Shop Grid 2 Columns</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a href="{% url 'home' %}"
+                                      >Shop Grid 3 Columns</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a href="{% url 'home' %}"
+                                      >Shop Grid 4 Columns</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a href="{% url 'home' %}"
+                                      ><span
+                                        >Shop Market<span class="tip tip-new"
+                                          >New</span
+                                        ></span
+                                      ></a
+                                    >
+                                  </li>
+                                </ul>
+
+                                <div class="menu-title">Shop no sidebar</div>
+                                <!-- End .menu-title -->
+                                <ul>
+                                  <li>
+                                    <a href="{% url 'home' %}"
+                                      ><span
+                                        >Shop Boxed No Sidebar<span
+                                          class="tip tip-hot"
+                                          >Hot</span
+                                        ></span
+                                      ></a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a href="{% url 'home' %}"
+                                      >Shop Fullwidth No Sidebar</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                              <!-- End .col-md-6 -->
+
+                              <div class="col-md-6">
+                                <div class="menu-title">Product Category</div>
+                                <!-- End .menu-title -->
+                                <ul>
+                                  <li>
+                                    <a href="{% url 'home' %}"
+                                      >Product Category Boxed</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a href="{% url 'home' %}"
+                                      ><span
+                                        >Product Category Fullwidth<span
+                                          class="tip tip-new"
+                                          >New</span
+                                        ></span
+                                      ></a
+                                    >
+                                  </li>
+                                </ul>
+                                <div class="menu-title">Shop Pages</div>
+                                <!-- End .menu-title -->
+                                <ul>
+                                  <li><a href="{% url 'home' %}">Cart</a></li>
+                                  <li><a href="{% url 'home' %}">Checkout</a></li>
+                                  <li><a href="{% url 'home' %}">Wishlist</a></li>
+                                  <li>
+                                    <a href="{% url 'home' %}">My Account</a>
+                                  </li>
+                                  <li><a href="#">Lookbook</a></li>
+                                </ul>
+                              </div>
+                              <!-- End .col-md-6 -->
+                            </div>
+                            <!-- End .row -->
+                          </div>
+                          <!-- End .menu-col -->
+                        </div>
+                        <!-- End .col-md-8 -->
+
+                        <div class="col-md-4">
+                          <div class="banner banner-overlay">
+                            <a href="{% url 'home' %}" class="banner banner-menu">
+                              <img
+                                src="{% static 'assets/images/menu/banner-1.jpg' %}"
+                                alt="Banner"
+                              />
+
+                              <div class="banner-content banner-content-top">
+                                <div class="banner-title text-white">
+                                  Last <br />Chance<br /><span
+                                    ><strong>Sale</strong></span
+                                  >
+                                </div>
+                                <!-- End .banner-title -->
+                              </div>
+                              <!-- End .banner-content -->
+                            </a>
+                          </div>
+                          <!-- End .banner banner-overlay -->
+                        </div>
+                        <!-- End .col-md-4 -->
+                      </div>
+                      <!-- End .row -->
+                    </div>
+                    <!-- End .megamenu megamenu-md -->
+                  </li>
+                  <li>
+                    <a href="{% url 'home' %}" class="sf-with-ul">Product</a>
+
+                    <div class="megamenu megamenu-sm">
+                      <div class="row no-gutters">
+                        <div class="col-md-6">
+                          <div class="menu-col">
+                            <div class="menu-title">Product Details</div>
+                            <!-- End .menu-title -->
+                            <ul>
+                              <li><a href="{% url 'home' %}">Default</a></li>
+                              <li>
+                                <a href="{% url 'home' %}">Centered</a>
+                              </li>
+                              <li>
+                                <a href="{% url 'home' %}"
+                                  ><span
+                                    >Extended Info<span class="tip tip-new"
+                                      >New</span
+                                    ></span
+                                  ></a
+                                >
+                              </li>
+                              <li>
+                                <a href="{% url 'home' %}">Gallery</a>
+                              </li>
+                              <li>
+                                <a href="{% url 'home' %}">Sticky Info</a>
+                              </li>
+                              <li>
+                                <a href="{% url 'home' %}"
+                                  >Boxed With Sidebar</a
+                                >
+                              </li>
+                              <li>
+                                <a href="{% url 'home' %}">Full Width</a>
+                              </li>
+                              <li>
+                                <a href="{% url 'home' %}"
+                                  >Masonry Sticky Info</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <!-- End .menu-col -->
+                        </div>
+                        <!-- End .col-md-6 -->
+
+                        <div class="col-md-6">
+                          <div class="banner banner-overlay">
+                            <a href="{% url 'home' %}">
+                              <img
+                                src="{% static 'assets/images/menu/banner-2.jpg' %}"
+                                alt="Banner"
+                              />
+
+                              <div class="banner-content banner-content-bottom">
+                                <div class="banner-title text-white">
+                                  New Trends<br /><span
+                                    ><strong>spring 2019</strong></span
+                                  >
+                                </div>
+                                <!-- End .banner-title -->
+                              </div>
+                              <!-- End .banner-content -->
+                            </a>
+                          </div>
+                          <!-- End .banner -->
+                        </div>
+                        <!-- End .col-md-6 -->
+                      </div>
+                      <!-- End .row -->
+                    </div>
+                    <!-- End .megamenu megamenu-sm -->
+                  </li>
+                  <li>
+                    <a href="#" class="sf-with-ul">Pages</a>
+
+                    <ul>
+                      <li>
+                        <a href="{% url 'home' %}" class="sf-with-ul">About</a>
+
+                        <ul>
+                          <li><a href="{% url 'home' %}">About 01</a></li>
+                          <li><a href="{% url 'home' %}">About 02</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="{% url 'home' %}" class="sf-with-ul">Contact</a>
+
+                        <ul>
+                          <li><a href="{% url 'home' %}">Contact 01</a></li>
+                          <li><a href="{% url 'home' %}">Contact 02</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="{% url 'home' %}">Login</a></li>
+                      <li><a href="{% url 'home' %}">FAQs</a></li>
+                      <li><a href="{% url 'home' %}">Error 404</a></li>
+                      <li><a href="{% url 'home' %}">Coming Soon</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="{% url 'home' %}" class="sf-with-ul">Blog</a>
+
+                    <ul>
+                      <li><a href="{% url 'home' %}">Classic</a></li>
+                      <li><a href="{% url 'home' %}">Listing</a></li>
+                      <li>
+                        <a href="#">Grid</a>
+                        <ul>
+                          <li>
+                            <a href="{% url 'home' %}">Grid 2 columns</a>
+                          </li>
+                          <li>
+                            <a href="{% url 'home' %}">Grid 3 columns</a>
+                          </li>
+                          <li>
+                            <a href="{% url 'home' %}">Grid 4 columns</a>
+                          </li>
+                          <li>
+                            <a href="{% url 'home' %}">Grid sidebar</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">Masonry</a>
+                        <ul>
+                          <li>
+                            <a href="{% url 'home' %}"
+                              >Masonry 2 columns</a
+                            >
+                          </li>
+                          <li>
+                            <a href="{% url 'home' %}"
+                              >Masonry 3 columns</a
+                            >
+                          </li>
+                          <li>
+                            <a href="{% url 'home' %}"
+                              >Masonry 4 columns</a
+                            >
+                          </li>
+                          <li>
+                            <a href="{% url 'home' %}"
+                              >Masonry sidebar</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">Mask</a>
+                        <ul>
+                          <li>
+                            <a href="{% url 'home' %}">Blog mask grid</a>
+                          </li>
+                          <li>
+                            <a href="{% url 'home' %}"
+                              >Blog mask masonry</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">Single Post</a>
+                        <ul>
+                          <li>
+                            <a href="{% url 'home' %}">Default with sidebar</a>
+                          </li>
+                          <li>
+                            <a href="{% url 'home' %}"
+                              >Fullwidth no sidebar</a
+                            >
+                          </li>
+                          <li>
+                            <a href="{% url 'home' %}"
+                              >Fullwidth with sidebar</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="{% url 'home' %}" class="sf-with-ul">Elements</a>
+
+                    <ul>
+                      <li><a href="{% url 'home' %}">Products</a></li>
+                      <li><a href="{% url 'home' %}">Typography</a></li>
+                      <li><a href="{% url 'home' %}">Titles</a></li>
+                      <li><a href="{% url 'home' %}">Banners</a></li>
+                      <li>
+                        <a href="{% url 'home' %}">Product Category</a>
+                      </li>
+                      <li>
+                        <a href="{% url 'home' %}">Video Banners</a>
+                      </li>
+                      <li><a href="{% url 'home' %}">Buttons</a></li>
+                      <li><a href="{% url 'home' %}">Accordions</a></li>
+                      <li><a href="{% url 'home' %}">Tabs</a></li>
+                      <li>
+                        <a href="{% url 'home' %}">Testimonials</a>
+                      </li>
+                      <li><a href="{% url 'home' %}">Blog Posts</a></li>
+                      <li><a href="{% url 'home' %}">Portfolio</a></li>
+                      <li><a href="{% url 'home' %}">Call to Action</a></li>
+                      <li><a href="{% url 'home' %}">Icon Boxes</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <!-- End .menu -->
+              </nav>
+              <!-- End .main-nav -->
+            </div>
+            <!-- End .header-left -->
+
+            <div class="header-right">
+              <div class="header-search">
+                <a href="#" class="search-toggle" role="button" title="Search"
+                  ><i class="icon-search"></i
+                ></a>
+                <form action="#" method="get">
+                  <div class="header-search-wrapper">
+                    <label for="q" class="sr-only">Search</label>
+                    <input
+                      type="search"
+                      class="form-control"
+                      name="q"
+                      id="q"
+                      placeholder="Search in..."
+                      required
+                    />
+                  </div>
+                  <!-- End .header-search-wrapper -->
+                </form>
+              </div>
+              <!-- End .header-search -->
+              <div class="dropdown compare-dropdown">
+                <a
+                  href="#"
+                  class="dropdown-toggle"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  data-display="static"
+                  title="Compare Products"
+                  aria-label="Compare Products"
+                >
+                  <i class="icon-random"></i>
+                </a>
+
+                <div class="dropdown-menu dropdown-menu-right">
+                  <ul class="compare-products">
+                    <li class="compare-product">
+                      <a href="#" class="btn-remove" title="Remove Product"
+                        ><i class="icon-close"></i
+                      ></a>
+                      <h4 class="compare-product-title">
+                        <a href="{% url 'home' %}">Blue Night Dress</a>
+                      </h4>
+                    </li>
+                    <li class="compare-product">
+                      <a href="#" class="btn-remove" title="Remove Product"
+                        ><i class="icon-close"></i
+                      ></a>
+                      <h4 class="compare-product-title">
+                        <a href="{% url 'home' %}">White Long Skirt</a>
+                      </h4>
+                    </li>
+                  </ul>
+
+                  <div class="compare-actions">
+                    <a href="#" class="action-link">Clear All</a>
+                    <a href="#" class="btn btn-outline-primary-2"
+                      ><span>Compare</span><i class="icon-long-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- End .dropdown-menu -->
+              </div>
+              <!-- End .compare-dropdown -->
+
+              <div class="dropdown cart-dropdown">
+                <a
+                  href="#"
+                  class="dropdown-toggle"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  data-display="static"
+                >
+                  <i class="icon-shopping-cart"></i>
+                  <span class="cart-count">2</span>
+                </a>
+
+                <div class="dropdown-menu dropdown-menu-right">
+                  <div class="dropdown-cart-products">
+                    <div class="product">
+                      <div class="product-cart-details">
+                        <h4 class="product-title">
+                          <a href="{% url 'home' %}"
+                            >Beige knitted elastic runner shoes</a
+                          >
+                        </h4>
+
+                        <span class="cart-product-info">
+                          <span class="cart-product-qty">1</span>
+                          x $84.00
+                        </span>
+                      </div>
+                      <!-- End .product-cart-details -->
+
+                      <figure class="product-image-container">
+                        <a href="{% url 'home' %}" class="product-image">
+                          <img
+                            src="{% static 'assets/images/products/cart/product-1.jpg' %}"
+                            alt="product"
+                          />
+                        </a>
+                      </figure>
+                      <a href="#" class="btn-remove" title="Remove Product"
+                        ><i class="icon-close"></i
+                      ></a>
+                    </div>
+                    <!-- End .product -->
+
+                    <div class="product">
+                      <div class="product-cart-details">
+                        <h4 class="product-title">
+                          <a href="{% url 'home' %}"
+                            >Blue utility pinafore denim dress</a
+                          >
+                        </h4>
+
+                        <span class="cart-product-info">
+                          <span class="cart-product-qty">1</span>
+                          x $76.00
+                        </span>
+                      </div>
+                      <!-- End .product-cart-details -->
+
+                      <figure class="product-image-container">
+                        <a href="{% url 'home' %}" class="product-image">
+                          <img
+                            src="{% static 'assets/images/products/cart/product-2.jpg' %}"
+                            alt="product"
+                          />
+                        </a>
+                      </figure>
+                      <a href="#" class="btn-remove" title="Remove Product"
+                        ><i class="icon-close"></i
+                      ></a>
+                    </div>
+                    <!-- End .product -->
+                  </div>
+                  <!-- End .cart-product -->
+
+                  <div class="dropdown-cart-total">
+                    <span>Total</span>
+
+                    <span class="cart-total-price">$160.00</span>
+                  </div>
+                  <!-- End .dropdown-cart-total -->
+
+                  <div class="dropdown-cart-action">
+                    <a href="{% url 'home' %}" class="btn btn-primary"
+                      >View Cart</a
+                    >
+                    <a href="{% url 'home' %}" class="btn btn-outline-primary-2"
+                      ><span>Checkout</span><i class="icon-long-arrow-right"></i
+                    ></a>
+                  </div>
+                  <!-- End .dropdown-cart-total -->
+                </div>
+                <!-- End .dropdown-menu -->
+              </div>
+              <!-- End .cart-dropdown -->
+            </div>
+            <!-- End .header-right -->
+          </div>
+          <!-- End .container -->
+        </div>
+        <!-- End .header-middle -->
+      </header>
+      <!-- End .header -->
+
+      <main class="main">
+        <div
+          class="page-header text-center"
+          style="background-image: url('assets/images/page-header-bg.jpg')"
+        >
+          <div class="container">
+            <h1 class="page-title">Product Category Boxed<span>Shop</span></h1>
+          </div>
+          <!-- End .container -->
+        </div>
+        <!-- End .page-header -->
+        <nav
+          aria-label="breadcrumb"
+          class="breadcrumb-nav breadcrumb-with-filter"
+        >
+          <div class="container">
+            <a href="#" class="sidebar-toggler"
+              ><i class="icon-bars"></i>Filters</a
+            >
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Shop</a></li>
+              <li class="breadcrumb-item"><a href="#">Product Category</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Boxed</li>
+            </ol>
+          </div>
+          <!-- End .container -->
+        </nav>
+        <!-- End .breadcrumb-nav -->
+
+        <div class="page-content">
+          <div class="categories-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        {% for product in products|slice:":2" %}
+                        <div class="banner banner-cat banner-badge">
+                            <a href="#">
+                                <img src="{{ product.image.url }}" alt="Banner" />
+                            </a>
+                            <a class="banner-link" href="{% url 'make_payment' product.pk %}">
+                                <h3 class="banner-title">{{ product.name }}</h3>
+                                <h4 class="banner-subtitle">{{ product.price }}</h4>
+                                <span class="banner-link-text">Shop Now</span>
+                            </a>
+                        </div><!-- End .banner -->
+                        {% endfor %}
+                    </div><!-- End .col-md-6 -->
+        
+                    <div class="col-md-6">
+                        <div class="row">
+                            {% for product in products|slice:"2:4" %}
+                            <div class="col-sm-6">
+                                <div class="banner banner-cat banner-badge">
+                                    <a href="#">
+                                        <img src="{{ product.image.url }}" alt="Banner" />
+                                    </a>
+                                    <a class="banner-link" href="{% url 'make_payment' product.pk %}">
+                                        <h3 class="banner-title">{{ product.name }}</h3>
+                                        <h4 class="banner-subtitle">{{ product.price }}</h4>
+                                        <span class="banner-link-text">Shop Now</span>
+                                    </a>
+                                </div><!-- End .banner -->
+                            </div><!-- End .col-sm-6 -->
+                            {% endfor %}
+                        </div><!-- End .row -->
+        
+                        {% for product in products|slice:"4:6" %}
+                        <div class="banner banner-cat banner-badge">
+                            <a href="#">
+                                <img src="{{ product.image.url }}" alt="Banner" />
+                            </a>
+                            <a class="banner-link" href="{% url 'make_payment' product.pk %}">
+                                <h3 class="banner-title">{{ product.name }}</h3>
+                                <h4 class="banner-subtitle">{{ product.price }}</h4>
+                                <span class="banner-link-text">Shop Now</span>
+                            </a>
+                        </div><!-- End .banner -->
+                        {% endfor %}
+                    </div><!-- End .col-md-6 -->
+                </div><!-- End .row -->
+            </div><!-- End .container -->
+        </div><!-- End .categories-page -->
+        
+          
+          <!-- End .categories-page -->
+
+          <div class="sidebar-filter-overlay"></div>
+          <!-- End .sidebar-filter-overlay -->
+          <aside class="sidebar-shop sidebar-filter sidebar-filter-banner">
+            <div class="sidebar-filter-wrapper">
+              <div class="widget widget-clean">
+                <label><i class="icon-close"></i>Filters</label>
+                <a href="#" class="sidebar-filter-clear">Clean All</a>
+              </div>
+              <div class="widget">
+                <h3 class="widget-title">Browse Category</h3>
+                <!-- End .widget-title -->
+
+                <div class="widget-body">
+                  <div class="filter-items filter-items-count">
+                    <div class="filter-item">
+                      <div class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="cat-1"
+                        />
+                        <label class="custom-control-label" for="cat-1"
+                          >Women</label
+                        >
+                      </div>
+                      <!-- End .custom-checkbox -->
+                      <span class="item-count">3</span>
+                    </div>
+                    <!-- End .filter-item -->
+
+                    <div class="filter-item">
+                      <div class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="cat-2"
+                        />
+                        <label class="custom-control-label" for="cat-2"
+                          >Men</label
+                        >
+                      </div>
+                      <!-- End .custom-checkbox -->
+                      <span class="item-count">0</span>
+                    </div>
+                    <!-- End .filter-item -->
+
+                    <div class="filter-item">
+                      <div class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="cat-3"
+                        />
+                        <label class="custom-control-label" for="cat-3"
+                          >Holiday Shop</label
+                        >
+                      </div>
+                      <!-- End .custom-checkbox -->
+                      <span class="item-count">0</span>
+                    </div>
+                    <!-- End .filter-item -->
+
+                    <div class="filter-item">
+                      <div class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="cat-4"
+                        />
+                        <label class="custom-control-label" for="cat-4"
+                          >Gifts</label
+                        >
+                      </div>
+                      <!-- End .custom-checkbox -->
+                      <span class="item-count">0</span>
+                    </div>
+                    <!-- End .filter-item -->
+
+                    <div class="filter-item">
+                      <div class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="cat-5"
+                        />
+                        <label class="custom-control-label" for="cat-5"
+                          >Homeware</label
+                        >
+                      </div>
+                      <!-- End .custom-checkbox -->
+                      <span class="item-count">0</span>
+                    </div>
+                    <!-- End .filter-item -->
+
+                    <div class="filter-item">
+                      <div class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="cat-6"
+                          checked="checked"
+                        />
+                        <label class="custom-control-label" for="cat-6"
+                          >Grid Categories Fullwidth</label
+                        >
+                      </div>
+                      <!-- End .custom-checkbox -->
+                      <span class="item-count">13</span>
+                    </div>
+                    <!-- End .filter-item -->
+
+                    <div class="sub-filter-items">
+                      <div class="filter-item">
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="cat-7"
+                          />
+                          <label class="custom-control-label" for="cat-7"
+                            >Dresses</label
+                          >
+                        </div>
+                        <!-- End .custom-checkbox -->
+                        <span class="item-count">3</span>
+                      </div>
+                      <!-- End .filter-item -->
+
+                      <div class="filter-item">
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="cat-8"
+                          />
+                          <label class="custom-control-label" for="cat-8"
+                            >T-shirts</label
+                          >
+                        </div>
+                        <!-- End .custom-checkbox -->
+                        <span class="item-count">0</span>
+                      </div>
+                      <!-- End .filter-item -->
+
+                      <div class="filter-item">
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="cat-9"
+                          />
+                          <label class="custom-control-label" for="cat-9"
+                            >Bags</label
+                          >
+                        </div>
+                        <!-- End .custom-checkbox -->
+                        <span class="item-count">4</span>
+                      </div>
+                      <!-- End .filter-item -->
+
+                      <div class="filter-item">
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="cat-10"
+                          />
+                          <label class="custom-control-label" for="cat-10"
+                            >Jackets</label
+                          >
+                        </div>
+                        <!-- End .custom-checkbox -->
+                        <span class="item-count">2</span>
+                      </div>
+                      <!-- End .filter-item -->
+
+                      <div class="filter-item">
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="cat-11"
+                          />
+                          <label class="custom-control-label" for="cat-11"
+                            >Shoes</label
+                          >
+                        </div>
+                        <!-- End .custom-checkbox -->
+                        <span class="item-count">2</span>
+                      </div>
+                      <!-- End .filter-item -->
+
+                      <div class="filter-item">
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="cat-12"
+                          />
+                          <label class="custom-control-label" for="cat-12"
+                            >Jumpers</label
+                          >
+                        </div>
+                        <!-- End .custom-checkbox -->
+                        <span class="item-count">1</span>
+                      </div>
+                      <!-- End .filter-item -->
+
+                      <div class="filter-item">
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="cat-13"
+                          />
+                          <label class="custom-control-label" for="cat-13"
+                            >Jeans</label
+                          >
+                        </div>
+                        <!-- End .custom-checkbox -->
+                        <span class="item-count">1</span>
+                      </div>
+                      <!-- End .filter-item -->
+
+                      <div class="filter-item">
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="cat-14"
+                          />
+                          <label class="custom-control-label" for="cat-14"
+                            >Sportwear</label
+                          >
+                        </div>
+                        <!-- End .custom-checkbox -->
+                        <span class="item-count">0</span>
+                      </div>
+                      <!-- End .filter-item -->
+                    </div>
+                    <!-- End .sub-filter-items -->
+                  </div>
+                  <!-- End .filter-items -->
+                </div>
+                <!-- End .widget-body -->
+              </div>
+              <!-- End .widget -->
+            </div>
+            <!-- End .sidebar-filter-wrapper -->
+          </aside>
+          <!-- End .sidebar-filter -->
+        </div>
+        <!-- End .page-content -->
+      </main>
+      <!-- End .main -->
+
+      <footer class="footer">
+        <div class="footer-middle">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-lg-3">
+                <div class="widget widget-about">
+                  <img
+                    src="{% static 'assets/images/bliss.png' %}"
+                    class="footer-logo"
+                    alt="Footer Logo"
+                    width="105"
+                    height="25"
+                  />
+                  <p>
+                    Praesent dapibus, neque id cursus ucibus, tortor neque
+                    egestas augue, eu vulputate magna eros eu erat.
+                  </p>
+
+                  <div class="social-icons">
+                    <a
+                      href="#"
+                      class="social-icon"
+                      target="_blank"
+                      title="Facebook"
+                      ><i class="icon-facebook-f"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="social-icon"
+                      target="_blank"
+                      title="Twitter"
+                      ><i class="icon-twitter"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="social-icon"
+                      target="_blank"
+                      title="Instagram"
+                      ><i class="icon-instagram"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="social-icon"
+                      target="_blank"
+                      title="Youtube"
+                      ><i class="icon-youtube"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="social-icon"
+                      target="_blank"
+                      title="Pinterest"
+                      ><i class="icon-pinterest"></i
+                    ></a>
+                  </div>
+                  <!-- End .soial-icons -->
+                </div>
+                <!-- End .widget about-widget -->
+              </div>
+              <!-- End .col-sm-6 col-lg-3 -->
+
+              <div class="col-sm-6 col-lg-3">
+                <div class="widget">
+                  <h4 class="widget-title">Useful Links</h4>
+                  <!-- End .widget-title -->
+
+                  <ul class="widget-list">
+                    <li><a href="#">About Molla</a></li>
+                    <li><a href="#">How to shop on Molla</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Log in</a></li>
+                  </ul>
+                  <!-- End .widget-list -->
+                </div>
+                <!-- End .widget -->
+              </div>
+              <!-- End .col-sm-6 col-lg-3 -->
+
+              <div class="col-sm-6 col-lg-3">
+                <div class="widget">
+                  <h4 class="widget-title">Customer Service</h4>
+                  <!-- End .widget-title -->
+
+                  <ul class="widget-list">
+                    <li><a href="#">Payment Methods</a></li>
+                    <li><a href="#">Money-back guarantee!</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                  </ul>
+                  <!-- End .widget-list -->
+                </div>
+                <!-- End .widget -->
+              </div>
+              <!-- End .col-sm-6 col-lg-3 -->
+
+              <div class="col-sm-6 col-lg-3">
+                <div class="widget">
+                  <h4 class="widget-title">My Account</h4>
+                  <!-- End .widget-title -->
+
+                  <ul class="widget-list">
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="{% url 'home' %}">View Cart</a></li>
+                    <li><a href="#">My Wishlist</a></li>
+                    <li><a href="#">Track My Order</a></li>
+                    <li><a href="#">Help</a></li>
+                  </ul>
+                  <!-- End .widget-list -->
+                </div>
+                <!-- End .widget -->
+              </div>
+              <!-- End .col-sm-6 col-lg-3 -->
+            </div>
+            <!-- End .row -->
+          </div>
+          <!-- End .container -->
+        </div>
+        <!-- End .footer-middle -->
+
+        <div class="footer-bottom">
+          <div class="container">
+            <p class="footer-copyright">
+              Copyright © 2019 Molla Store. All Rights Reserved.
+            </p>
+            <!-- End .footer-copyright -->
+            <figure class="footer-payments">
+              <img
+                src="{% static 'assets/images/payments.png' %}"
+                alt="Payment methods"
+                width="272"
+                height="20"
+              />
+            </figure>
+            <!-- End .footer-payments -->
+          </div>
+          <!-- End .container -->
+        </div>
+        <!-- End .footer-bottom -->
+      </footer>
+      <!-- End .footer -->
+    </div>
+    <!-- End .page-wrapper -->
+    <button id="scroll-top" title="Back to Top">
+      <i class="icon-arrow-up"></i>
+    </button>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay"></div>
+    <!-- End .mobil-menu-overlay -->
+
+    <div class="mobile-menu-container">
+      <div class="mobile-menu-wrapper">
+        <span class="mobile-menu-close"><i class="icon-close"></i></span>
+
+        <form action="#" method="get" class="mobile-search">
+          <label for="mobile-search" class="sr-only">Search</label>
+          <input
+            type="search"
+            class="form-control"
+            name="mobile-search"
+            id="mobile-search"
+            placeholder="Search in..."
+            required
+          />
+          <button class="btn btn-primary" type="submit">
+            <i class="icon-search"></i>
+          </button>
+        </form>
+
+        <nav class="mobile-nav">
+          <ul class="mobile-menu">
+            <li class="active">
+              <a href="{% url 'home' %}">Home</a>
+
+              <ul>
+                <li><a href="{% url 'home' %}">01 - furniture store</a></li>
+                <li><a href="{% url 'home' %}">02 - furniture store</a></li>
+                <li><a href="{% url 'home' %}">03 - electronic store</a></li>
+                <li><a href="{% url 'home' %}">04 - electronic store</a></li>
+                <li><a href="{% url 'home' %}">05 - fashion store</a></li>
+                <li><a href="{% url 'home' %}">06 - fashion store</a></li>
+                <li><a href="{% url 'home' %}">07 - fashion store</a></li>
+                <li><a href="{% url 'home' %}">08 - fashion store</a></li>
+                <li><a href="{% url 'home' %}">09 - fashion store</a></li>
+                <li><a href="{% url 'home' %}">10 - shoes store</a></li>
+                <li><a href="{% url 'home' %}">11 - furniture simple store</a></li>
+                <li><a href="{% url 'home' %}">12 - fashion simple store</a></li>
+                <li><a href="{% url 'home' %}">13 - market</a></li>
+                <li><a href="{% url 'home' %}">14 - market fullwidth</a></li>
+                <li><a href="{% url 'home' %}">15 - lookbook 1</a></li>
+                <li><a href="{% url 'home' %}">16 - lookbook 2</a></li>
+                <li><a href="{% url 'home' %}">17 - fashion store</a></li>
+                <li>
+                  <a href="{% url 'home' %}">18 - fashion store (with sidebar)</a>
+                </li>
+                <li><a href="{% url 'home' %}">19 - games store</a></li>
+                <li><a href="{% url 'home' %}">20 - book store</a></li>
+                <li><a href="{% url 'home' %}">21 - sport store</a></li>
+                <li><a href="{% url 'home' %}">22 - tools store</a></li>
+                <li>
+                  <a href="{% url 'home' %}">23 - fashion left navigation store</a>
+                </li>
+                <li><a href="{% url 'home' %}">24 - extreme sport store</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="{% url 'home' %}">Shop</a>
+              <ul>
+                <li><a href="{% url 'home' %}">Shop List</a></li>
+                <li><a href="{% url 'home' %}">Shop Grid 2 Columns</a></li>
+                <li><a href="{% url 'home' %}">Shop Grid 3 Columns</a></li>
+                <li><a href="{% url 'home' %}">Shop Grid 4 Columns</a></li>
+                <li>
+                  <a href="{% url 'home' %}"
+                    ><span
+                      >Shop Boxed No Sidebar<span class="tip tip-hot"
+                        >Hot</span
+                      ></span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a href="{% url 'home' %}">Shop Fullwidth No Sidebar</a>
+                </li>
+                <li>
+                  <a href="{% url 'home' %}">Product Category Boxed</a>
+                </li>
+                <li>
+                  <a href="{% url 'home' %}"
+                    ><span
+                      >Product Category Fullwidth<span class="tip tip-new"
+                        >New</span
+                      ></span
+                    ></a
+                  >
+                </li>
+                <li><a href="{% url 'home' %}">Cart</a></li>
+                <li><a href="{% url 'home' %}">Checkout</a></li>
+                <li><a href="{% url 'home' %}">Wishlist</a></li>
+                <li><a href="#">Lookbook</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="{% url 'home' %}" class="sf-with-ul">Product</a>
+              <ul>
+                <li><a href="{% url 'home' %}">Default</a></li>
+                <li><a href="{% url 'home' %}">Centered</a></li>
+                <li>
+                  <a href="{% url 'home' %}"
+                    ><span
+                      >Extended Info<span class="tip tip-new">New</span></span
+                    ></a
+                  >
+                </li>
+                <li><a href="{% url 'home' %}">Gallery</a></li>
+                <li><a href="{% url 'home' %}">Sticky Info</a></li>
+                <li><a href="{% url 'home' %}">Boxed With Sidebar</a></li>
+                <li><a href="{% url 'home' %}">Full Width</a></li>
+                <li><a href="{% url 'home' %}">Masonry Sticky Info</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Pages</a>
+              <ul>
+                <li>
+                  <a href="{% url 'home' %}">About</a>
+
+                  <ul>
+                    <li><a href="{% url 'home' %}">About 01</a></li>
+                    <li><a href="{% url 'home' %}">About 02</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="{% url 'home' %}">Contact</a>
+
+                  <ul>
+                    <li><a href="{% url 'home' %}">Contact 01</a></li>
+                    <li><a href="{% url 'home' %}">Contact 02</a></li>
+                  </ul>
+                </li>
+                <li><a href="{% url 'home' %}">Login</a></li>
+                <li><a href="{% url 'home' %}">FAQs</a></li>
+                <li><a href="{% url 'home' %}">Error 404</a></li>
+                <li><a href="{% url 'home' %}">Coming Soon</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="{% url 'home' %}">Blog</a>
+
+              <ul>
+                <li><a href="{% url 'home' %}">Classic</a></li>
+                <li><a href="{% url 'home' %}">Listing</a></li>
+                <li>
+                  <a href="#">Grid</a>
+                  <ul>
+                    <li><a href="{% url 'home' %}">Grid 2 columns</a></li>
+                    <li><a href="{% url 'home' %}">Grid 3 columns</a></li>
+                    <li><a href="{% url 'home' %}">Grid 4 columns</a></li>
+                    <li><a href="{% url 'home' %}">Grid sidebar</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Masonry</a>
+                  <ul>
+                    <li>
+                      <a href="{% url 'home' %}">Masonry 2 columns</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'home' %}">Masonry 3 columns</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'home' %}">Masonry 4 columns</a>
+                    </li>
+                    <li>{% url 'home' %}blog-masonry-sidebar.html">Masonry sidebar</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Mask</a>
+                  <ul>
+                    <li><a href="{% url 'home' %}">Blog mask grid</a></li>
+                    <li>
+                      <a href="{% url 'home' %}">Blog mask masonry</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Single Post</a>
+                  <ul>
+                    <li><a href="{% url 'home' %}">Default with sidebar</a></li>
+                    <li>
+                      <a href="{% url 'home' %}">Fullwidth no sidebar</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'home' %}"
+                        >Fullwidth with sidebar</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="{% url 'home' %}">Elements</a>
+              <ul>
+                <li><a href="{% url 'home' %}">Products</a></li>
+                <li><a href="{% url 'home' %}">Typography</a></li>
+                <li><a href="{% url 'home' %}">Titles</a></li>
+                <li><a href="{% url 'home' %}">Banners</a></li>
+                <li>
+                  <a href="{% url 'home' %}">Product Category</a>
+                </li>
+                <li><a href="{% url 'home' %}">Video Banners</a></li>
+                <li><a href="{% url 'home' %}">Buttons</a></li>
+                <li><a href="{% url 'home' %}">Accordions</a></li>
+                <li><a href="{% url 'home' %}">Tabs</a></li>
+                <li><a href="{% url 'home' %}">Testimonials</a></li>
+                <li><a href="{% url 'home' %}">Blog Posts</a></li>
+                <li><a href="{% url 'home' %}">Portfolio</a></li>
+                <li><a href="{% url 'home' %}">Call to Action</a></li>
+                <li><a href="{% url 'home' %}">Icon Boxes</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- End .mobile-nav -->
+
+        <div class="social-icons">
+          <a href="#" class="social-icon" target="_blank" title="Facebook"
+            ><i class="icon-facebook-f"></i
+          ></a>
+          <a href="#" class="social-icon" target="_blank" title="Twitter"
+            ><i class="icon-twitter"></i
+          ></a>
+          <a href="#" class="social-icon" target="_blank" title="Instagram"
+            ><i class="icon-instagram"></i
+          ></a>
+          <a href="#" class="social-icon" target="_blank" title="Youtube"
+            ><i class="icon-youtube"></i
+          ></a>
+        </div>
+        <!-- End .social-icons -->
+      </div>
+      <!-- End .mobile-menu-wrapper -->
+    </div>
+    <!-- End .mobile-menu-container -->
+
+    <!-- Sign in / Register Modal -->
+    <div
+      class="modal fade"
+      id="signin-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"><i class="icon-close"></i></span>
+            </button>
+
+            <div class="form-box">
+              <div class="form-tab">
+                <ul class="nav nav-pills nav-fill" role="tablist">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      id="signin-tab"
+                      data-toggle="tab"
+                      href="#signin"
+                      role="tab"
+                      aria-controls="signin"
+                      aria-selected="true"
+                      >Sign In</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      id="register-tab"
+                      data-toggle="tab"
+                      href="#register"
+                      role="tab"
+                      aria-controls="register"
+                      aria-selected="false"
+                      >Register</a
+                    >
+                  </li>
+                </ul>
+                <div class="tab-content" id="tab-content-5">
+                  <div
+                    class="tab-pane fade show active"
+                    id="signin"
+                    role="tabpanel"
+                    aria-labelledby="signin-tab"
+                  >
+                    <form action="#">
+                      <div class="form-group">
+                        <label for="singin-email"
+                          >Username or email address *</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="singin-email"
+                          name="singin-email"
+                          required
+                        />
+                      </div>
+                      <!-- End .form-group -->
+
+                      <div class="form-group">
+                        <label for="singin-password">Password *</label>
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="singin-password"
+                          name="singin-password"
+                          required
+                        />
+                      </div>
+                      <!-- End .form-group -->
+
+                      <div class="form-footer">
+                        <button type="submit" class="btn btn-outline-primary-2">
+                          <span>LOG IN</span>
+                          <i class="icon-long-arrow-right"></i>
+                        </button>
+
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="signin-remember"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="signin-remember"
+                            >Remember Me</label
+                          >
+                        </div>
+                        <!-- End .custom-checkbox -->
+
+                        <a href="#" class="forgot-link"
+                          >Forgot Your Password?</a
+                        >
+                      </div>
+                      <!-- End .form-footer -->
+                    </form>
+                    <div class="form-choice">
+                      <p class="text-center">or sign in with</p>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <a href="#" class="btn btn-login btn-g">
+                            <i class="icon-google"></i>
+                            Login With Google
+                          </a>
+                        </div>
+                        <!-- End .col-6 -->
+                        <div class="col-sm-6">
+                          <a href="#" class="btn btn-login btn-f">
+                            <i class="icon-facebook-f"></i>
+                            Login With Facebook
+                          </a>
+                        </div>
+                        <!-- End .col-6 -->
+                      </div>
+                      <!-- End .row -->
+                    </div>
+                    <!-- End .form-choice -->
+                  </div>
+                  <!-- .End .tab-pane -->
+                  <div
+                    class="tab-pane fade"
+                    id="register"
+                    role="tabpanel"
+                    aria-labelledby="register-tab"
+                  >
+                    <form action="#">
+                      <div class="form-group">
+                        <label for="register-email">Your email address *</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="register-email"
+                          name="register-email"
+                          required
+                        />
+                      </div>
+                      <!-- End .form-group -->
+
+                      <div class="form-group">
+                        <label for="register-password">Password *</label>
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="register-password"
+                          name="register-password"
+                          required
+                        />
+                      </div>
+                      <!-- End .form-group -->
+
+                      <div class="form-footer">
+                        <button type="submit" class="btn btn-outline-primary-2">
+                          <span>SIGN UP</span>
+                          <i class="icon-long-arrow-right"></i>
+                        </button>
+
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="register-policy"
+                            required
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="register-policy"
+                            >I agree to the
+                            <a href="#">privacy policy</a> *</label
+                          >
+                        </div>
+                        <!-- End .custom-checkbox -->
+                      </div>
+                      <!-- End .form-footer -->
+                    </form>
+                    <div class="form-choice">
+                      <p class="text-center">or sign in with</p>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <a href="#" class="btn btn-login btn-g">
+                            <i class="icon-google"></i>
+                            Login With Google
+                          </a>
+                        </div>
+                        <!-- End .col-6 -->
+                        <div class="col-sm-6">
+                          <a href="#" class="btn btn-login btn-f">
+                            <i class="icon-facebook-f"></i>
+                            Login With Facebook
+                          </a>
+                        </div>
+                        <!-- End .col-6 -->
+                      </div>
+                      <!-- End .row -->
+                    </div>
+                    <!-- End .form-choice -->
+                  </div>
+                  <!-- .End .tab-pane -->
+                </div>
+                <!-- End .tab-content -->
+              </div>
+              <!-- End .form-tab -->
+            </div>
+            <!-- End .form-box -->
+          </div>
+          <!-- End .modal-body -->
+        </div>
+        <!-- End .modal-content -->
+      </div>
+      <!-- End .modal-dialog -->
+    </div>
+    <!-- End .modal -->
+
+    <!-- Plugins JS File -->
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.hoverIntent.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'assets/js/superfish.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <!-- Main JS File -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+  </body>
+
+  <!-- molla/product-category-boxed.html  22 Nov 2019 10:03:09 GMT -->
+</html>
